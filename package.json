@@ -1,0 +1,14 @@
+{
+  "name": "layout-designer-project-58",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/sosa000/layout-designer-project-58/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/sosa000/layout-designer-project-58/actions)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "soso000",
+  "license": "MIT",
+  "devDependencies": {
+    "htmlhint": "^1.1.4"
+  }
+}
