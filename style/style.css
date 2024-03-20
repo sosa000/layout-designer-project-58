@@ -32,83 +32,94 @@
     --background-url: url("../images/background.png");
 }
 
-body {
-    margin: 0 auto;
-    display: block;
-}
 
 @font-face {
     font-family: Neucha;
-    src: url('../font/Neucha-Regular.ttf');
-    font-size: 16px;
-    line-height: 1.6em;
-    color: #2A2626;
+    src: url('../font/Neucha-Regular.ttf'); 
 }
 
 h1, h2, h3 {
     line-height: 1.2em;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
     font-size: 72px;
 }
 
-h2 {
-    font-size: 60px;
-}
-
-h3 {
-    font-size: 34px;
-}
-
-header::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: var(--background-url);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.1;
-    content: "";
-    color: #F5F4F0;
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
 }
 
 header {
     display: flex;
-    flex-direction: row;
-    width: 1110px;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+header::before {
+    content: " ";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    background-image: var(--background-url);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header-main-section {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
+    padding: 100px 0;
+    position: relative;
+    width: 1110px;
+    margin: 0 auto;
 }
 
-.header-title {
-    display: flex;
-    margin:0px;
+.header-main-section > h1 {
+    position: relative;
+    font-family: Neucha, sans-serif;
+    color: #2A2626;
+    z-index: 200;
+}
+
+.h-text {
+    position: relative;
+    color: #FE8A02;
 }
 
 .header-img {
-    position: relative;
+    position: absolute;
+    z-index: 100;
     top: 55px;
     right: -270px;
     height: 525px;
 }
 
-.h-text {
-    color: #FE8A02;
+.left-text {
+    margin: auto;
 }
 
-.header-text {
-    margin-left: 165px;
-    white-space: nowrap;
-    color: #2A2626;
-    font-family: Neucha, sans-serif;
+.right-text {
+    margin: auto;
 }
+
+.under-header-text {
+    margin: 0 auto;
+    flex-direction: row;
+    display: flex;
+    padding: 0 165px;
+}
+
+
 
 
 
