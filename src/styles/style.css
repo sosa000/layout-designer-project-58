@@ -99,11 +99,14 @@ header::before {
 }
 
 .under-header-text {
-    width: 1110px;
     margin: 185px auto;
     flex-direction: row;
     display: flex;
     align-items: flex-start;
+}
+
+.left-text, .right-text {
+    width: 540px;
 }
 
 .left-text, .right-text > p{
@@ -115,6 +118,18 @@ header::before {
     margin-right: 30px;
 }
 
+.link-button {
+    padding: 12px 24px;
+    font-family: OpenSans, sans-serif;
+    color: #FFFFFF;
+    background-color: #FE8A02;
+}
+
+.header-button {
+    padding-top: 40px;
+}
+
+
 @font-face {
     font-family: Neucha;
     src: url('../font/Neucha-Regular.ttf'); 
@@ -122,5 +137,5 @@ header::before {
 
 @font-face {
     font-family: OpenSans;
-    src: url('../font/OpenSans-VariableFont_wdth\,wght.ttf');
+    src: url('../font/OpenSans-VariableFont_wdth,wght.ttf');
 }
