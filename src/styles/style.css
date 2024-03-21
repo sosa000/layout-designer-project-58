@@ -32,7 +32,7 @@
     --background-url: url("../images/background.png");
 }
 
-h1, h2, h3 {
+/* h1, h2, h3 {
     line-height: 1.2em;
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 72px;
-}
+} */
 
 body {
     overflow-x: hidden;
@@ -53,17 +53,14 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 1110px;
-    margin: 0 auto;
-    min-height: 900px;
+    
 }
 
 .header-bg::before {
-    content: "";
+    content: " ";
     opacity: 0.1;
     top: 0;
     left: 0;
-    right: 0;
     width: 100%;
     height: 100%;
     z-index: -100;
@@ -73,10 +70,12 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+/* 
 .header-main-section {
     padding-top: 100px;
     position: relative;
+    width: 1110px;
+    margin: 0 auto;
 }
 
 .header-main-section > h1 {
@@ -88,7 +87,6 @@ header {
 }
 
 .h-text {
-    position: relative;
     color: #FE8A02;
 }
 
@@ -143,4 +141,4 @@ header {
 @font-face {
     font-family: OpenSans;
     src: url('../font/OpenSans-VariableFont_wdth,wght.ttf');
-}
+} */
