@@ -57,7 +57,7 @@ header {
 
 }
 
-header::before {
+.header-bg::before {
     content: " ";
     opacity: 0.1;
     width: 100%;
