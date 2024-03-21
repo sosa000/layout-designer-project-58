@@ -109,6 +109,7 @@ header::before {
 }
 
 .left-text, .right-text > p{
+    line-height: 1.6em;
     font-family: OpenSans, sans-serif;
     color: #2A2626;
 }
@@ -118,6 +119,8 @@ header::before {
 }
 
 .link-button {
+    text-decoration: none;
+    font-weight: bold;
     padding: 12px 24px;
     font-family: OpenSans, sans-serif;
     color: #FFFFFF;
