@@ -1,7 +1,126 @@
-/** CSS STYLE **/
+/* Цвета
+Белый: #fff
+Полупрозрачный белый: #d7ccc0
+Светлый: #f5f4f0
+Основной: #fe8a02
+Основной тёмный: #42413c
+Тёмный: #2a2626
+Полупрозрачный тёмный: #908d8b
+Коричневый: #b09a81
+Синий: #1085c5
 
-.hello {
-  display: block;
+Шрифты
+В качестве основного шрифта используется Open Sans
+Для заголовков используется шрифт Neucha
+Размер шрифта: 16px
+Межстрочный интервал: 1.6em
+Цвет шрифта: #2A2626
 
-  color: #fff;
+Заголовки
+Межстрочный интервал заголовков: 1.2em
+Размер заголовка первого уровня: 72px
+Размер заголовка второго уровня: 60px
+Размер заголовка третьего уровня: 34px
+
+Секции
+Ограничение по ширине контента: 1110px
+Выравнивание по центру
+Отступы по 100 пикселей сверху и снизу */
+
+
+:root {
+    --background-url: url("../images/background.png");
+}
+
+h1, h2, h3 {
+    line-height: 1.2em;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+body {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+header::before {
+    content: " ";
+    top: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+    color: #F5F4F0;
+    background-image: var(--background-url);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-main-section {
+    padding-top: 100px;
+    position: relative;
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.header-main-section > h1 {
+    position: relative;
+    font-family: Neucha, sans-serif;
+    color: #2A2626;
+    z-index: 200;
+}
+
+.h-text {
+    position: relative;
+    color: #FE8A02;
+}
+
+.header-img {
+    position: absolute;
+    z-index: 100;
+    top: 55px;
+    right: -270px;
+    height: 525px;
+}
+
+.under-header-text {
+    width: 1110px;
+    margin: 185px auto;
+    flex-direction: row;
+    display: flex;
+    align-items: flex-start;
+}
+
+.left-text, .right-text > p{
+    font-family: OpenSans, sans-serif;
+    color: #2A2626;
+}
+
+.left-text {
+    margin-right: 30px;
+}
+
+@font-face {
+    font-family: Neucha;
+    src: url('../font/Neucha-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: OpenSans;
+    src: url('../font/OpenSans-VariableFont_wdth\,wght.ttf');
 }
