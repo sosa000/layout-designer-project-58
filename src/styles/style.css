@@ -32,7 +32,7 @@
     --background-url: url("../images/background.png");
 }
 
-/* h1, h2, h3 {
+h1, h2, h3 {
     line-height: 1.2em;
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@
 
 h1 {
     font-size: 72px;
-} */
+}
 
 body {
     overflow-x: hidden;
@@ -70,7 +70,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
 }
-/* 
+
 .header-main-section {
     padding-top: 100px;
     position: relative;
@@ -141,4 +141,4 @@ header {
 @font-face {
     font-family: OpenSans;
     src: url('../font/OpenSans-VariableFont_wdth,wght.ttf');
-} */
+}
