@@ -112,6 +112,8 @@ header::before {
 .left-text, .right-text > p{
     font-family: OpenSans-Regular, sans-serif;
     color: #2A2626;
+    text-align: left;
+    line-height: 25.6px;
 }
 
 .left-text {
@@ -121,6 +123,7 @@ header::before {
 .link-button {
     text-decoration: none;
     padding: 12px 24px;
+
     font-family: OpenSans-Bold, sans-serif;
     color: #FFFFFF;
     background-color: #FE8A02;
