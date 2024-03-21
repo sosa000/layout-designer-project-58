@@ -125,12 +125,13 @@ header::before {
     padding: 12px 24px;
 
     font-family: OpenSans-Bold, sans-serif;
-    color: #FFFFFF;
+    color: #FFF;
     background-color: #FE8A02;
 }
 
 .header-button {
     padding-top: 40px;
+    padding-bottom: 100px;
 }
 
 
