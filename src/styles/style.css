@@ -52,7 +52,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 900px;
+    max-height: 900px;
 }
 
 header::before {
