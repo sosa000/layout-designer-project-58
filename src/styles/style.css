@@ -49,11 +49,9 @@ body {
 }
 
 header {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-height: 914px;
 }
 
 header::before {
@@ -99,10 +97,12 @@ header::before {
 }
 
 .under-header-text {
+    display: block;
     margin: 0 auto;
     flex-direction: row;
     display: flex;
     margin-top: 185px;
+    margin-bottom: 100px;
 }
 
 .left-text, .right-text {
@@ -154,4 +154,10 @@ header::before {
     font-weight: 700;
     font-family: OpenSans-Bold;
     src: url("../font/OpenSans-Bold.ttf");
-  }
+}
+
+@media (max-width: 1440) {
+    .under-header-text {
+        margin-left: 165px;
+    }
+}
