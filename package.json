@@ -1,14 +1,20 @@
 {
-  "name": "layout-designer-project-58",
-  "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/sosa000/layout-designer-project-58/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/sosa000/layout-designer-project-58/actions)",
-  "main": "index.html",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "html5-css-boilerplate",
+  "version": "0.1.0",
+  "description": "HTML5/CSS Boilerplate with HTMLHint and StyleLint",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexlet-boilerplates/html-boilerplate.git"
   },
-  "author": "soso000",
-  "license": "MIT",
+  "main": "",
   "devDependencies": {
-    "htmlhint": "^1.1.4"
-  }
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.2.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-scss": "^4.4.0",
+    "surge": "^0.23.1"
+  },
+  "author": "Nikita Mikhaylov",
+  "license": "ISC"
 }
