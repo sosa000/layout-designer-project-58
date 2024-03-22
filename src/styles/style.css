@@ -43,8 +43,9 @@ h1 {
 
 body {
     display: block;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -136,7 +137,20 @@ header::before {
     background-color: #FE8A02;
 }
 
+.link-button:hover {
+    width: 148px;
+    height: 49px;
+    display: block;
+    text-decoration: none;
+    padding: 12px 24px;
+    margin-top: 40px;
+    font-family: OpenSans-Bold, sans-serif;
+    color: #FFF;
+    background-color: #EA7600;
+}
+
 .video-section {
+    overflow: hidden;
     position: relative;
     margin: 0 auto;
     padding-top: 100px;
@@ -181,13 +195,13 @@ header::before {
     z-index: 100;
     margin-top: 30px;
     filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-    
+    margin: 0 auto;
 }
 
 .navigation {
     padding: 100px 0;
     background-color: #42413C;
-
+    margin: 0 auto;
 }
 
 .main-nav {
@@ -214,6 +228,8 @@ header::before {
     display: flex;
     flex-direction: column;
     padding: 24px;
+    color: #000 !important;
+    text-decoration: none
 }
 
 .nav-section > h1 {
@@ -249,6 +265,95 @@ header::before {
     background-color: #F5F4F0;
 }
 
+.effect-ikea {
+    z-index: 200;
+    width: 1110px;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.effect-ikea-bg {
+    position: relative;
+}
+
+.effect-ikea-bg::before {
+    position: absolute;
+    content: " ";
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    color: #F5F4F0;
+    background-image: url("../images/background.png");;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-effect-ikea {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.effect-ikea-about > h1 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Neucha, sans-serif;
+    line-height: 28.8px;
+    color: #908D8B;
+}
+
+.effect-ikea-about > h2 {
+    font-size: 60px;
+    font-weight: 400;
+    font-family: Neucha, sans-serif;
+    line-height: 72px;
+    padding-bottom: 30px;
+}
+
+.effect-ikea-about > p {
+    font-size: 34px;
+    font-weight: 400;
+    font-family: Neucha, sans-serif;
+    line-height: 40.8px;
+}
+
+.effect-ikea-img {
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+    padding-right: 30px;
+}
+
+.effect-ikea-how {
+    font-size: 14px;
+    font-family: OpenSans-Bold;
+    background-color: #B09A81;
+    color: #FFF;
+    padding: 5px 10px;
+    line-height: 16.8px;
+    font-weight: 700px;
+}
+
+.text-effect-ikea {
+    display: flex;
+    font-size: 16px;
+    font-family: OpenSans-Regular;
+    font-weight: 400;
+    line-height: 25.6px;
+    margin-bottom: 100px;
+}
+
+.left-text-ikea, .right-text-ikea {
+    width: 540px;
+}
+
+.left-text-ikea {
+    margin-right: 30px;
+}
+
 @font-face {
     font-family: Neucha;
     src: url('../font/Neucha-Regular.ttf');
@@ -262,10 +367,4 @@ header::before {
 @font-face {
     font-family: OpenSans-Bold;
     src: url("../font/OpenSans-Bold.ttf");
-}
-
-@media (max-width: 1440) {
-    .under-header-text {
-        margin-left: 165px;
-    }
 }
